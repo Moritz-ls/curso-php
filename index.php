@@ -13,6 +13,7 @@ curl_close($ch);
 ?>
 
 <head>
+    <link rel="shortcut icon" href="/images/gaelUp.jpeg"/>
     <meta charset="UTF-8">
     <title>La próxima película de Marvel</title>
     <meta name="description" content="La próxima película de Marvel">
@@ -27,6 +28,8 @@ curl_close($ch);
 
 <main>
     <section>
+    <img src="/images/2025-08-16-19:28:50-screenshot.png" width="500px" height="350px" style="border-radius: 16px;">
+    <h2>Mexico con "A" de Mujer</h2>
     <img src="<?= $data["poster_url"]; ?>" width="200px" alt="Poster de <?= $data["title"];?>"
     style="border-radius: 16px">
     </section>
@@ -51,6 +54,7 @@ curl_close($ch);
 
     section{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
     }
